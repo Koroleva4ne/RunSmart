@@ -99,7 +99,7 @@
             color: #050505
         &__wrapper
             display: flex
-            width: calc( 200% + 40px)
+            width: calc(200% + 40px)
         &__content
             width: 50%
             margin-right: 0px
@@ -121,22 +121,25 @@
             &_active
                 transform: translateX(-100%)
                 margin-left: 0px
-            li
-                position: relative
-                font-size: 14px
-                font-weight: 300
-                line-height: normal
-                text-align: left
-                color: #555
-                margin-bottom: 20px
-                &::before
-                    content: ""
-                    position: absolute
-                    width: 5px
-                    height: 5px
-                    background-color: $main-color
-                    left: -14px
-                    top: 7px
+            ul
+                padding-left: 0px
+                margin-bottom: 0px
+                li
+                    position: relative
+                    font-size: 14px
+                    font-weight: 300
+                    line-height: normal
+                    text-align: left
+                    color: #555
+                    margin-bottom: 20px
+                    &::before
+                        content: ""
+                        position: absolute
+                        width: 5px
+                        height: 5px
+                        background-color: $main-color
+                        left: -14px
+                        top: 7px
         &__back
             position: absolute
             display: block
@@ -149,6 +152,8 @@
             text-align: center
             color: $main-color
             text-transform: uppercase
+            &:hover
+                color: $main-color
 
 
 

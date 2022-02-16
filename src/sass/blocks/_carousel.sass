@@ -4,7 +4,7 @@
         position: relative
         width: 750px
         margin: 0 auto
-    .prev, .next
+    .slick-prev, .slick-next
         position: absolute
         top: 50%
         transform: translateY(-50%)
@@ -14,10 +14,23 @@
         img
             width: 31px
             height: 50px
-    .next
+    .slick-next
         left: auto
         right: -66px
-    .tns-item
-        img
-            display: block
-            margin: 0 auto
+    .slick-dots
+        text-align: center
+        display: flex
+        justify-content: center
+        list-style: none
+        padding-left: 0
+        margin-bottom: 0
+        button
+            background: #d0d0d0
+            border: none
+            border-radius: 100%
+            font-size: 0
+            width: 20px
+            margin: 5px
+            outline: none
+        li[class="slick-active"] button
+            background: #0d0d0d
